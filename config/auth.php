@@ -40,6 +40,10 @@ return [
             'driver' => 'session',
             'provider' => 'users',
         ],
+        'konselor' => [
+            'driver' => 'session',
+            'provider' => 'konselors',
+        ],
     ],
 
     /*
@@ -64,6 +68,11 @@ return [
             'driver' => 'eloquent',
             'model' => App\Models\User::class,
         ],
+        'konselors' => [
+            'driver' => 'eloquent',
+            'model' => App\Models\Konselor::class,
+        ],
+        
 
         // 'users' => [
         //     'driver' => 'database',
